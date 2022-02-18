@@ -1,41 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" style="background-image: url(img/bg-1.jpg)">
-<head>
-    <meta charset="UTF-8">
-    <title>Bouffe.io</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?1" type="text/css"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous"></head>
-<body>
-<div class="container">
-    <div class="v-card">
-        <div class="wrap-avatar">
-            <div class="avatar">
-                <img src="img/me.png" alt="Antoine Lemaire">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bouffe.io</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
+        <link rel="stylesheet" href="css/style.css?1" type="text/css"/>
+        <!-- External fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+            rel="preload"
+            as="style"
+            onload="this.rel='stylesheet'"
+        >
+        <link
+            href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+            integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+            crossorigin="anonymous"
+            rel="preload"
+            as="style"
+            onload="this.rel='stylesheet'"
+        >
+    </head>
+    <body>
+    <div class="container">
+        <div class="v-card">
+            <div class="wrap-avatar">
+                <div class="avatar">
+                    <img src="img/me.png" alt="Antoine Lemaire">
+                </div>
             </div>
-        </div>
 
-        <div class="about">
-            <h1>Antoine Lemaire</h1>
-            <h2>Web developer</h2>
-        </div>
-
-        <div class="links">
-            <a href="https://github.com/AntoineLemaire" title="My Github"><i class="fab fa-github"></i></a>
-            <!--<a href="http://www.doyoubuzz.com/jean-baptiste-delhommeau" title="See my CV" class="fa fa-university"></a>-->
-            <a href="https://twitter.com/FecaBouffe" title="Follow me on Twitter"><i class="fab fa-twitter"></i></a>
-            <div>
+            <div class="about">
+                <h1>Antoine Lemaire</h1>
+                <h2>Web developer</h2>
             </div>
-        </div>
 
-        <script>
-            var nbImages = 1;
-            var i = Math.floor((Math.random() * nbImages) + 1);
-            document.documentElement.style.backgroundImage = "url('img/background/bg-" + i + ".jpg')";
-        </script>
+            <div class="links">
+                <a href="https://github.com/AntoineLemaire" title="My Github"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/FecaBouffe" title="Follow me on Twitter"><i class="fab fa-twitter"></i></a>
+                <div>
+                </div>
+            </div>
 
-
-</body>
+            <script>
+                const nbImages = 1;
+                let i = Math.floor((Math.random() * nbImages) + 1);
+                document.documentElement.style.backgroundImage = "url('img/background/bg-" + i + ".jpg')";
+            </script>
+    </body>
 </html>
