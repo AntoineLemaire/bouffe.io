@@ -13,6 +13,11 @@ html {
 	font-size: 62.5%;
 }
 
+
+html.fallback { background-image: url('../img/background/bg-1.jpg') }
+html.webp { background-image: url('../img/background/bg-1.webp') }
+html.avif { background-image: url('../img/background/bg-1.avif') }
+
 @media (max-width: 767px) {
     html {
         background-position: left center;
