@@ -27,7 +27,13 @@
             <div class="v-card">
                 <div class="wrap-avatar">
                     <div class="avatar">
-                        <img src="img/me.png" alt="Antoine Lemaire" height="200" width="200">
+                        <picture>
+                            <source srcset="img/me.png.avif" type="image/avif">
+                            <source srcset="img/me.png.webp" type="image/webp">
+                            <img decoding="async" loading="lazy"
+                                 src="img/me.png" alt="Antoine Lemaire"
+                                 height="200" width="200">
+                        </picture>
                     </div>
                 </div>
 
@@ -37,16 +43,14 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://github.com/AntoineLemaire" title="My Github"><i class="fab fa-github"></i></a>
-                    <a href="https://twitter.com/FecaBouffe" title="Follow me on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/AntoineLemaire" title="My Github" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/FecaBouffe" title="Follow me on Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
-
-                <script>
-                    const nbImages = 1;
-                    let i = Math.floor((Math.random() * nbImages) + 1);
-                    document.documentElement.style.backgroundImage = "url('img/background/bg-" + i + ".jpg')";
-                </script>
             </div>
         </div>
+        <script>
+            // AVIF / WEBP detection for Background image
+            function addClass(A){document.documentElement.classList.add(A)}var avif=new Image;function check_webp_feature(a){var e=new Image;e.onload=function(){var A=0<e.width&&0<e.height;a(A)},e.onerror=function(){a(!1)},e.src="data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA=="}avif.src="data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAB0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQ0MAAAAABNjb2xybmNseAACAAIAAYAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAACVtZGF0EgAKCBgANogQEAwgMg8f8D///8WfhwB8+ErK42A=",avif.onload=function(){addClass("avif")},avif.onerror=function(){check_webp_feature(function(A){return addClass(A?"webp":"fallback")})};
+        </script>
     </body>
 </html>
