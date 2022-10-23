@@ -21,5 +21,47 @@ export default async (context, locale) => {
         github: 'Github contributions',
       },
     },
+    skill: {
+      symfony: {
+        title: 'Symfony',
+        description: 'foo bar lorem ipsum',
+      },
+      php: {
+        title: 'PHP',
+        description: 'foo bar lorem ipsum',
+      },
+      vuejs: {
+        title: 'VueJs',
+        description: 'foo bar lorem ipsum',
+      },
+      databases: {
+        title: 'Databases',
+        description: 'foo bar lorem ipsum',
+      },
+      git: {
+        title: 'git',
+        description: 'foo bar lorem ipsum',
+      },
+      devops: {
+        title: 'Devops',
+        description: 'AWS, Alpine Linux, Debian, nginx, php-fpm',
+      },
+      js: {
+        title: 'Javascript',
+        description: 'foo bar lorem ipsum',
+      },
+      search: {
+        title: 'Elasticsearch',
+        description: 'foo bar lorem ipsum',
+      },
+      sass: {
+        title: 'SASS & Less',
+        description: 'foo bar lorem ipsum',
+      },
+      html: {
+        title: 'HTML5 & CSS3',
+        description: 'foo bar lorem ipsum',
+      },
+    },
   });
 };

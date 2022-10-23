@@ -21,5 +21,47 @@ export default async (context, locale) => {
         github: 'Mes contributions Github',
       },
     },
+    skill: {
+      symfony: {
+        title: 'Symfony',
+        description: 'Meilleur framework ever, bientôt 10 ans à travailler avec',
+      },
+      php: {
+        title: 'PHP',
+        description: 'Ma véritable LV2',
+      },
+      vuejs: {
+        title: 'VueJs',
+        description: "Le backend c'est mieux, mais j'ai fini par prendre mes marques avec VueJS",
+      },
+      databases: {
+        title: 'Databases',
+        description: 'MySQL, MariaDB, PostgreSQL, Redis, MongoDB',
+      },
+      git: {
+        title: 'Versionning',
+        description: 'Git, Github, Gitlab',
+      },
+      devops: {
+        title: 'Devops',
+        description: 'AWS, Alpine Linux, Debian, NGINX',
+      },
+      js: {
+        title: 'Javascript',
+        description: 'Il en faut, vanilla, nodejs etc.',
+      },
+      search: {
+        title: 'Elasticsearch',
+        description: 'Pour des recherches ultra rapides',
+      },
+      sass: {
+        title: 'SASS & Less',
+        description: "C'est quand même plus simple que du pûr CSS",
+      },
+      html: {
+        title: 'HTML5 & CSS3',
+        description: 'On a tous commencé par là',
+      },
+    },
   });
 };
