@@ -6,7 +6,6 @@
 
   .section-title {
     position: relative;
-    font-size: 2rem;
     padding-left: 1.5rem;
     &::before {
       background: #6c51a4;
@@ -48,6 +47,33 @@
           font-size: .875rem;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .main-wrapper {
+    margin-left: auto;
+    > section {
+      padding: 1rem !important;
+    }
+    .container {
+      padding: 0;
+    }
+
+    .skills {
+      grid-template-columns: 1fr 1fr;
+      .item {
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .main-wrapper {
+    .skills {
+      grid-template-columns: 1fr;
     }
   }
 }

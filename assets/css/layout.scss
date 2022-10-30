@@ -40,7 +40,11 @@
       font-size: .875rem;
       text-align: center;
     }
-
+    .list-bio {
+      li {
+        list-style-type: none;
+      }
+    }
     .links {
       text-align: center;
       a {
@@ -48,7 +52,6 @@
         svg {
           display: inline-block;
           border-radius: 60px;
-          color: white;
           padding: 10px;
           text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
           ::before{
@@ -63,13 +66,31 @@
     }
     .links a i.fab {
     }
-
+  }
+  .language-switcher {
+    text-align: center;
+    img {
+      height: 50px;
+    }
   }
   .dark-mode-toggle {
+    padding: 1.5rem 1rem;
     text-align: center;
     .toggle-name {
       font-size: .875rem;
       margin-bottom: 1rem;
     }
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    height: auto;
+    position: static;
+    width: inherit;
+    padding-bottom: var(--block-spacing-vertical);
+  }
+  h1 {
+    font-size: var(--font-size);
   }
 }

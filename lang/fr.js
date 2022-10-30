@@ -14,6 +14,8 @@ export default async (context, locale) => {
       theme: {
         label: 'Thème sombre',
       },
+      years: 'ans',
+      switch_lang: 'Passer en Français   🇫🇷',
     },
     index: {
       title: {

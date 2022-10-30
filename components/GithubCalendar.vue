@@ -23,12 +23,11 @@ export default {
       this.username,
       {
         responsive: true,
+        summary_text: '',
+        global_stats: false,
+        tooltips: true,
       },
     );
   },
 };
 </script>
-
-<style scoped>
-
-</style>

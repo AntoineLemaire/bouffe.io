@@ -1,8 +1,9 @@
 <template>
   <div>
-    <h2 class="section-title">
+    <h2>Lead Developper - Symfony</h2>
+    <h3 class="section-title">
       {{ $t('index.title.skills') }}
-    </h2>
+    </h3>
     <div class="container text-center">
       <div class="skills">
         <skill-card
@@ -18,7 +19,7 @@
           name="databases"
         />
         <skill-card
-          :icons="[['fa','search']]"
+          :icons="[['fa','magnifying-glass']]"
           name="search"
         />
         <skill-card
@@ -48,9 +49,9 @@
       </div>
     </div>
 
-    <h2 class="section-title">
+    <h3 class="section-title">
       {{ $t('index.title.github') }}
-    </h2>
+    </h3>
     <GithubCalendar username="AntoineLemaire" />
   </div>
 </template>

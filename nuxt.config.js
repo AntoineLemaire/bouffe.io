@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'portfolio',
+    title: 'Antoine Lemaire',
     htmlAttrs: {
       lang: 'en',
       'data-theme': 'dark',
@@ -14,9 +14,14 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
+      { name: 'msapplication-TileColor', content: '#11191f' },
+      { name: 'theme-color', content: '#11191f' },
     ],
     link: [
+      { rel: 'icon', type: 'image/png', size: '32x32', href: '/favicons/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', size: '16x16', href: '/favicons/favicon-16x16.png' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'apple-touch-icon', size: '180x180', href: '/favicons/apple-touch-icon.png' },
     ],
   },
 
@@ -54,14 +59,19 @@ export default {
 
   // i18n module options
   i18n: {
+    preload: ['en', 'fr'],
     locales: [
       {
         code: 'en',
         file: 'en.js',
+        name: 'English',
+        emoji: '🇬🇧',
       },
       {
         code: 'fr',
         file: 'fr.js',
+        name: 'Français',
+        emoji: '🇫🇷',
       },
     ],
     defaultLocale: 'fr',

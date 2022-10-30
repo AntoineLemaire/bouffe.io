@@ -14,6 +14,8 @@ export default async (context, locale) => {
       theme: {
         label: ' Dark Mode',
       },
+      years: 'yo',
+      switch_lang: 'Switch to English 🇬🇧',
     },
     index: {
       title: {
