@@ -1,0 +1,47 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint": "yarn lint:js",
+    "lintfix": "yarn lint:js --fix",
+    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate"
+  },
+  "dependencies": {
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@nuxtjs/i18n": "^7.3.0",
+    "@picocss/pico": "^1.5.6",
+    "bootstrap": "^5.2.2",
+    "core-js": "^3.25.3",
+    "fs": "^0.0.1-security",
+    "github-calendar": "^2.3.1",
+    "module": "^1.2.5",
+    "nuxt": "^2.15.8",
+    "nuxt-sass-resources-loader": "^2.0.5",
+    "perf_hooks": "^0.0.1",
+    "postcss": "^8.4.18",
+    "postcss-scss": "^4.0.5",
+    "vue": "^2.7.10",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@nuxtjs/eslint-config": "^11.0.0",
+    "@nuxtjs/eslint-module": "^3.1.0",
+    "@nuxtjs/fontawesome": "^1.1.2",
+    "eslint": "^8.24.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-vue": "^9.5.1",
+    "sass": "^1.55.0",
+    "sass-loader": "10"
+  }
+}
