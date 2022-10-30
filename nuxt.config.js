@@ -28,6 +28,7 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/css/app.scss',
+    { src: '@fortawesome/fontawesome-svg-core/styles.css', lang: 'css' },
     { src: '@picocss/pico/css/pico.css', lang: 'css' },
     { src: 'github-calendar/dist/github-calendar-responsive.css', lang: 'css' },
   ],

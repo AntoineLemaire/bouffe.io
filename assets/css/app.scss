@@ -1,6 +1,8 @@
 // Pico.css (https://picocss.com)
 @import '@picocss/pico/scss/pico';
 
+@import '@fortawesome/fontawesome-svg-core/styles.css';
+
 // Bootstrap (https://getbootstrap.com/)
 $include-column-box-sizing: true;
 $grid-breakpoints: (
