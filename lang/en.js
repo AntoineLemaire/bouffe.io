@@ -54,7 +54,7 @@ export default async (context, locale) => {
       },
       search: {
         title: 'Elasticsearch',
-        description: 'For fast search',
+        description: 'For fast searches',
       },
       sass: {
         title: 'SASS & Less',
