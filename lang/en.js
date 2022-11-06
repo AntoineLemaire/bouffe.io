@@ -26,23 +26,23 @@ export default async (context, locale) => {
     skill: {
       symfony: {
         title: 'Symfony',
-        description: 'foo bar lorem ipsum',
+        description: 'Best framework I met. I work with it since almost 10 years',
       },
       php: {
         title: 'PHP',
-        description: 'foo bar lorem ipsum',
+        description: 'My second language after French',
       },
       vuejs: {
         title: 'VueJs',
-        description: 'foo bar lorem ipsum',
+        description: 'I prefere Backend, but VueJS is something I also use everyday',
       },
       databases: {
         title: 'Databases',
-        description: 'foo bar lorem ipsum',
+        description: 'MySQL, MariaDB, PostgreSQL, Redis, MongoDB',
       },
       git: {
         title: 'git',
-        description: 'foo bar lorem ipsum',
+        description: 'Git, Github, Gitlab',
       },
       devops: {
         title: 'Devops',
@@ -50,19 +50,19 @@ export default async (context, locale) => {
       },
       js: {
         title: 'Javascript',
-        description: 'foo bar lorem ipsum',
+        description: 'We need it! Vanilla, nodejs, etc.',
       },
       search: {
         title: 'Elasticsearch',
-        description: 'foo bar lorem ipsum',
+        description: 'For fast search',
       },
       sass: {
         title: 'SASS & Less',
-        description: 'foo bar lorem ipsum',
+        description: 'Better and easier than classic CSS',
       },
       html: {
         title: 'HTML5 & CSS3',
-        description: 'foo bar lorem ipsum',
+        description: 'We all started here',
       },
     },
   });
