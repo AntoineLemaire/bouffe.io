@@ -1,6 +1,10 @@
 <template>
   <div>
-    <h2>Lead Developper - Symfony</h2>
+    <h2 class="hidden-md">Lead Developper - Symfony</h2>
+    <p class="d-md-none hidden-md">
+      {{ $t('header.description') }}
+    </p>
+
     <h3 class="section-title">
       {{ $t('index.title.skills') }}
     </h3>

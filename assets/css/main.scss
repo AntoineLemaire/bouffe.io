@@ -51,7 +51,16 @@
   }
 }
 
+@media (min-width: 992px) {
+  .hidden-lg {
+    display: none;
+  }
+}
+
 @media (max-width: 992px) {
+  .hidden-md {
+    display:none;
+  }
   .main-wrapper {
     margin-left: auto;
     > section {

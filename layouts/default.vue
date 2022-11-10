@@ -5,6 +5,7 @@
         <nuxt-link :to="localePath('index')" class="contrast">
           Antoine Lemaire
         </nuxt-link>
+        <h2 class="hidden-lg">Lead Developper - Symfony</h2>
       </h1>
       <div class="bio">
         <div class="avatar">
@@ -19,7 +20,7 @@
             >
           </picture>
         </div>
-        <p>
+        <p class="hidden-lg">
           {{ $t('header.description') }}
         </p>
         <ul class="list-bio">
@@ -39,15 +40,39 @@
           </a>
         </div>
       </div>
-      <hr>
+      <div class="header-footer">
+        <hr>
+        <div class="dark-mode-toggle text-center w-100">
+          <label for="switch">
+            <font-awesome-icon icon="sun" />
+            <input id="switch" v-model="themeCheck" type="checkbox" name="switch" role="switch">
+            <font-awesome-icon icon="moon" />
+          </label>
+        </div>
+        <div class="language-switcher">
+          <nuxt-link
+            v-for="locale in availableLocales"
+            :key="locale.code"
+            :to="switchLocalePath(locale.code)"
+          >
+            {{ $t('header.switch_lang', locale.code) }}
+          </nuxt-link>
+        </div>
+      </div>
+    </header>
+    <div class="main-wrapper">
+      <section>
+        <main class="container">
+          <Nuxt />
+        </main>
+      </section>
+    </div>
+    <footer class="footer">
       <div class="dark-mode-toggle text-center w-100">
-        <h4 class="toggle-name mb-3">
-          <font-awesome-icon icon="circle-half-stroke" />
-          {{ $t('header.theme.label') }}
-        </h4>
-
         <label for="switch">
+          <font-awesome-icon icon="sun" />
           <input id="switch" v-model="themeCheck" type="checkbox" name="switch" role="switch">
+          <font-awesome-icon icon="moon" />
         </label>
       </div>
       <div class="language-switcher">
@@ -59,14 +84,7 @@
           {{ $t('header.switch_lang', locale.code) }}
         </nuxt-link>
       </div>
-    </header>
-    <div class="main-wrapper">
-      <section>
-        <main class="container">
-          <Nuxt />
-        </main>
-      </section>
-    </div>
+    </footer>
   </div>
 </template>
 
