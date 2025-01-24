@@ -35,8 +35,8 @@
           <a href="https://github.com/AntoineLemaire" :title="$t('header.links.github.title')" class="contrast" target="_blank">
             <font-awesome-icon :icon="['fab','github']" />
           </a>
-          <a href="https://twitter.com/FecaBouffe" :title="$t('header.links.twitter.title')" class="contrast" target="_blank">
-            <font-awesome-icon :icon="['fab','twitter']" />
+          <a href="https://bsky.app/profile/bouffe.io" :title="$t('header.links.bluesky.title')" class="contrast" target="_blank">
+            <font-awesome-icon :icon="['fab','bluesky']" />
           </a>
         </div>
       </div>

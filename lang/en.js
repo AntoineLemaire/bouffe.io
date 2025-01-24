@@ -7,8 +7,8 @@ export default async (context, locale) => {
         github: {
           title: 'My Github',
         },
-        twitter: {
-          title: 'Follow me on Twitter',
+        bluesky: {
+          title: 'Follow me on Bluesky',
         },
       },
       theme: {
